@@ -3,8 +3,8 @@ from collections import Counter
 from datetime import datetime, timezone
 import json
 from pathlib import Path
-from collect_reference import PLAN, REFERENCE
-from validate_reference import REPORTS
+from .collect_reference import PLAN, REFERENCE
+from .validate_reference import REPORTS
 
 
 def build_report():

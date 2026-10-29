@@ -9,21 +9,21 @@ The original three hand-recorded day boards are preserved as `drikganita-*.json`
 Run from the project directory with its Python environment:
 
 ```bash
-python collect_reference.py --plan-only
-python collect_reference.py --workers 2
-python validate_reference.py --split development
-python report_reference.py
+python -m tools.collect_reference --plan-only
+python -m tools.collect_reference --workers 2
+python -m tools.validate_reference --split development
+python -m tools.report_reference
 ```
 
-The predeclared plan covers 2026 for Bellevue, Bengaluru and Sydney, plus selected regular-Chaitra, Adhika-Chaitra, skipped-Pratipada and repeated-Pratipada cases. Source capture is slow: the endpoint also calculates information not needed for this comparison. Each response is cached, so interrupted collection can resume. Requests start at most once per second, with bounded workers. HTTP 401, 403 and 429 stop new collection; they are not bypassed. Three consecutive request failures also stop collection. After an upstream outage, `python collect_reference.py --probe --workers 1` tries one uncaptured case once, with a 45-second timeout, before resuming the normal collector.
+The predeclared plan covers 2026 for Bellevue, Bengaluru and Sydney, plus selected regular-Chaitra, Adhika-Chaitra, skipped-Pratipada and repeated-Pratipada cases. Source capture is slow: the endpoint also calculates information not needed for this comparison. Each response is cached, so interrupted collection can resume. Requests start at most once per second, with bounded workers. HTTP 401, 403 and 429 stop new collection; they are not bypassed. Three consecutive request failures also stop collection. After an upstream outage, `python -m tools.collect_reference --probe --workers 1` tries one uncaptured case once, with a 45-second timeout, before resuming the normal collector.
 
 `--allow-partial` permits an explicitly incomplete development report while collection continues. It never opens reserved answers. `capture-status.json` describes the most recently completed collector run; count the saved city/date files for in-progress coverage.
 
 Once the complete development report has no failed compared fields and its calculation/comparison code is frozen, release the reserved answers once:
 
 ```bash
-python validate_reference.py --split holdout --release-holdout
-python report_reference.py
+python -m tools.validate_reference --split holdout --release-holdout
+python -m tools.report_reference
 ```
 
 The release saves calculation, comparator and plan hashes. It cannot be repeated as another unseen test. An explicitly named `--replay-holdout` is permitted only with unchanged hashes and writes a separate regression replay report. It never overwrites the first final comparison. If results are used to tune code, obtain new external test dates before claiming another unseen evaluation.

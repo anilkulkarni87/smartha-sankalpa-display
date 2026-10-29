@@ -5,8 +5,8 @@ import json
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from collect_reference import ENDPOINT, validate_capture
-from validate_reference import Comparison, normalize, month_name, source_segment, authorize_holdout
+from tools.collect_reference import ENDPOINT, validate_capture
+from tools.validate_reference import Comparison, normalize, month_name, source_segment, authorize_holdout
 
 
 class ReferenceValidationTests(unittest.TestCase):

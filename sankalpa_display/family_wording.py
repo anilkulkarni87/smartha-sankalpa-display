@@ -6,8 +6,8 @@ it does not assert teacher review or certify ritual geography.
 """
 import re
 from indic_transliteration import sanscript
-from speech import SCHEMES, FULL_TEMPLATE
-from sankalpa import MONTH
+from .speech import SCHEMES, FULL_TEMPLATE
+from .wording import MONTH
 
 # Fixed prose is transcribed from the screenshot; the pictured calendar values
 # are examples and are replaced with computed recital fields below.

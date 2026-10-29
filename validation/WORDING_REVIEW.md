@@ -2,7 +2,7 @@
 
 Calendar reference selected by the user: DrikGanita, Kannada/Amanta profile.
 
-- Family section received: Kannada screenshot supplied October 29, 2026. Its fixed prose is transcribed in `family_wording.py`; the pictured calendar values are replaced with computed values.
+- Family section received: Kannada screenshot supplied October 29, 2026. Its fixed prose is transcribed in `sankalpa_display/family_wording.py`; the pictured calendar values are replaced with computed values.
 - User confirmed retaining the existing Yajurveda opening and morning/noon/evening closing, and using the supplied geography only for US locations. The **My family Sankalpa** default uses standard expanded wording in other countries.
 - Kannada, Devanagari and Roman Sanskrit (IAST) renderings share the same text. Ashwayuja is the supplied recital synonym for Ashwina; the underlying month calculation is unchanged. The supplied generic Shubha Nakshatra/Yoga/Karana phrase is preserved.
 - User confirmation records the intended text and scope. Teacher review of grammar, ritual geography and the complete wording remains pending.

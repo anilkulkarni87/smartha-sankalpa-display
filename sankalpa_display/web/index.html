@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#122332"><title>Smartha Yajurveda Sankalpa</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body><main class="wrap">
+<header><div><div class="gold">॥ ಶ್ರೀ ಗಣೇಶಾಯ ನಮಃ ॥</div><h1>ಸಂಧ್ಯಾವಂದನೆ ಸಂಕಲ್ಪ</h1><div class="muted" id="locationTitle">Smartha · Yajurveda · Choose your location</div></div><div class="chip" id="clock">Loading local time…</div></header>
+<div class="controls setup-controls">
+ <div><label for="country">Country</label><select id="country" disabled><option>Loading countries…</option></select></div>
+ <div><label for="city">City</label><select id="city" disabled><option>Loading cities…</option></select></div>
+ <button id="toggle">Household settings</button><button id="print">Print</button>
+</div>
+<div class="controls session-controls">
+ <button data-mode="morning" class="selected" aria-pressed="true">ಪ್ರಾತಃ / Morning</button>
+ <button data-mode="noon" aria-pressed="false">ಮಾಧ್ಯಾಹ್ನಿಕ / Noon</button>
+ <button data-mode="evening" aria-pressed="false">ಸಾಯಂ / Evening</button>
+ <button id="refresh">Refresh now</button><button id="display">Home display</button><button id="fullscreen">Full screen</button>
+</div>
+<div class="notice" id="notice" role="status" aria-live="polite">Loading Panchanga for your selected location…</div>
+<noscript><p class="notice error">Enable JavaScript to calculate and display your daily Sankalpa.</p></noscript>
+<p id="calendarSummary" class="muted hide"></p>
+<section class="grid" id="grid" aria-label="Daily Panchanga"></section>
+<section class="panel"><div class="reader-heading"><h2 class="gold" id="readerTitle">Yajurveda · Morning Sankalpa</h2>
+ <div><label for="form">Your wording</label><select id="form"><option value="family">My family Sankalpa</option></select></div>
+ <div><label for="lang">Sankalpa language / script</label><select id="lang" disabled><option value="roman">English (transliteration)</option><option value="sanskrit">संस्कृतम् · Sanskrit</option><option value="kannada">ಕನ್ನಡ · Kannada</option></select></div></div>
+ <div class="controls"><button id="editWording">Edit wording</button><button id="addVariation">Add variation</button></div>
+ <div id="sankalpa">Waiting for Panchanga data…</div><p class="caption" id="readerNote">Your supplied family wording, with automatically updated calendar fields.</p>
+ <div class="audio-section"><div class="controls"><button id="generateAudio" disabled>Generate calendar audio · Vagdhenu</button><label for="audioSpeed">Playback speed <select id="audioSpeed"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option></select></label><label class="repeat"><input type="checkbox" id="repeatAudio"> Repeat</label></div>
+ <audio id="audioPlayer" controls preload="none" hidden aria-label="Generated Sankalpa audio"></audio>
+ <p id="audioStatus" class="caption" role="status" aria-live="polite">Generate the changing calendar fields, then press Play. Audio is Sanskrit in all three display scripts.</p>
+ <a id="downloadAudio" class="gold hide" download="sankalpa.wav">Download WAV</a>
+ <p class="caption">Generation sends only the eight calendar phrases shown below to <a class="gold" href="https://huggingface.co/spaces/prathoshap/vagdhenu-demo" target="_blank" rel="noreferrer">Vagdhenu on Hugging Face</a>. Cached audio replays locally. The full Sankalpa and personal wording are excluded; the current 100-syllable limit still applies. AI pronunciation aid; verify against your taught recitation.</p><details><summary>Calendar text used for audio</summary><p id="audioPreview" class="caption"></p></details></div>
+ </section>
+<p id="status" class="caption" role="status"></p>
+<section class="panel settingsPanel hide" id="settings">
+ <h2>Household & display settings</h2>
+ <div class="settings">
+  <div><label for="gotra">Gotra (optional; used only if your template includes {gotra})</label><input id="gotra" placeholder="Your family gotra"></div>
+  <div><label for="scale">Reader font size</label><input type="range" min="20" max="62" value="30" id="scale"></div>
+  <div><label for="timeMode">Calendar values</label><select id="timeMode"><option value="now">Current moment</option><option value="sunrise">Today's sunrise (reference only)</option></select></div>
+  <div><label for="sunriseMode">Sunrise definition</label><select id="sunriseMode"><option value="hindu">Hindu: geometric solar centre</option><option value="apparent">Apparent upper limb with refraction</option></select></div>
+  <div><label for="rituMode">Ritu convention</label><select id="rituMode"><option value="solar">Solar: sidereal sign pairs</option><option value="lunar">Lunar: Chaitra month pairs</option></select></div>
+  <div><label for="yearMode">Samvatsara turnover</label><select id="yearMode"><option value="conjunction">Regular Chaitra: exact new moon</option><option value="sunrise">Regular Chaitra: first following sunrise</option></select></div>
+ </div>
+ <p class="caption">DrikGanita reference profile: Hindu sunrise, solar Ritu, and year turnover at the exact regular-Chaitra new moon. The optional sunrise-year setting follows the first sunrise after that new moon; it does not apply festival-date rules.</p>
+ <p id="calculationProfile" class="caption"></p>
+ <div class="controls"><button id="save">Save household settings</button><button id="wordingUndo" class="hide">Restore hidden variation</button></div>
+ <p class="caption">Settings stay in this browser. To configure a home display, save them on that device. Morning/noon/evening is selected manually; this app does not determine ritual performance times.</p>
+</section>
+<section class="panel hide" id="wordingEditor" aria-label="Wording editor">
+ <h2 id="editorHeading">Edit your wording</h2>
+ <label for="variationName">Wording name</label><input id="variationName" maxlength="80">
+ <p class="caption" id="editorScope"></p>
+ <label for="template">Wording text</label><textarea id="template" spellcheck="false"></textarea>
+ <div class="controls"><div><label for="insertField">Insert a daily field</label><select id="insertField"><option value="recital_samvatsara">Samvatsara / year</option><option value="recital_ayana">Ayana</option><option value="recital_ritu">Ritu</option><option value="family_masa">Month</option><option value="recital_paksha">Paksha</option><option value="family_tithi">Tithi</option><option value="family_vara">Weekday</option><option value="recital_nakshatra">Nakshatra</option><option value="sandhya_action">Morning / noon / evening closing</option></select></div><button id="insertToken">Insert field</button></div>
+ <p class="caption">Keep placeholders such as {recital_samvatsara} and {sandhya_action}: the display fills these each day. Your changes preview in the reader above. Saving updates all three scripts using local transliteration.</p>
+ <details><summary>All available placeholders</summary><p class="caption">Available fields: {sandhya_action}, {samvatsara}, {ayana}, {ritu}, {masa}, {paksha}, {tithi}, {vara}, {nakshatra}, {yoga}, {karana}, {gotra}, {location}, {country}. Expanded-template tokens {recital_samvatsara}, {recital_ayana}, {recital_ritu}, {recital_masa}, {recital_paksha}, {recital_tithi}, {recital_vara}, {recital_nakshatra}, {recital_yoga}, {recital_karana} provide Sanskrit recital forms in the selected script. Family tokens {family_masa}, {family_tithi}, {family_vara} follow your supplied Ashwayuja, tithi and weekday wording.</p></details>
+ <div class="controls"><button id="saveWording">Save wording</button><button id="cancelWording">Cancel</button><button id="reset">Restore supplied wording in editor</button><button id="archiveWording">Hide this variation</button></div>
+ <p id="wordingStatus" class="caption" role="status"></p>
+ <p class="caption">Saved on this browser only. Editing the original preserves a copy of your supplied wording for restoration. Variations apply to the country where you create them.</p>
+</section>
+<p class="footer">Swiss Ephemeris · Lahiri ayanamsa · <span id="coordinates">City-centre coordinates</span>. Amanta months use calculated new moons and solar ingresses, including Adhika/Nija distinctions. Rare Kshaya months require manual recital review. Defaults: Hindu sunrise, solar Ritu, regular-Chaitra new-moon year turnover; Ayana follows sidereal Makara/Karka. DrikGanita comparison is partial; full-year external validation is pending. Confirm your family’s conventions and wording. <a class="gold" href="https://www.vadhyar.com/Sandhyavandanam-Yajurvedam-part-1.php" target="_blank" rel="noreferrer">Yajurveda short-form reference</a>.</p>
+</main>
+<script src="/static/app.js" defer></script>
+</body></html>

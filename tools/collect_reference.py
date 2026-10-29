@@ -15,13 +15,13 @@ import threading
 import time
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
-from locations import CITIES
+from sankalpa_display.locations import CITIES
 
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[1]
 REFERENCE=ROOT/'validation'/'reference'
 PLAN=REFERENCE/'plan.json'
 ENDPOINT='https://drikganita.com/api/v1/panchang'
-ENGINE_FILES=['app.py','lunisolar.py','locations.py','sankalpa.py','speech.py','family_wording.py']
+ENGINE_FILES=['app.py', *['sankalpa_display/'+name+'.py' for name in ('api','calendar','lunisolar','locations','wording','speech','family_wording')]]
 
 
 def engine_hashes():

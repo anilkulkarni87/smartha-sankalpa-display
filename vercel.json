@@ -4,7 +4,7 @@
   "functions": {
     "app.py": {
       "maxDuration": 300,
-      "excludeFiles": "{validation/**,test_*.py,scripts/**,graphify-out/**,.codex/**,.github/**,work/**,.venv*/**,*.md,requirements-dev.txt,requirements-tools.txt}"
+      "excludeFiles": "{validation/**,tests/**,tools/**,scripts/**,docs/**,graphify-out/**,.codex/**,.github/**,work/**,.venv*/**,*.md,requirements-dev.txt,requirements-tools.txt}"
     }
   }
 }

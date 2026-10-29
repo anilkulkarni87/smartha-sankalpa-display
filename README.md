@@ -45,9 +45,22 @@ Choose **Edit wording** to update the selected wording, or **Add variation** to 
 
 Calendar fields and session endings update automatically. The supplied generic Shubha Nakshatra/Yoga/Karana phrase and Ashwayuja month name are retained. Gotra is included only if its placeholder is inserted. Adhika/Nija qualifiers are included; Kshaya still withholds recital until reviewed. Teacher review of the wording and pronunciation remains pending.
 
+## Repository layout
+
+```text
+app.py                       # Local and Vercel entry point
+sankalpa_display/             # API, calendar, wording and audio
+  web/                       # index.html, app.js and styles.css
+tests/                       # Automated regression checks
+tools/                       # Reference capture and comparison commands
+validation/                  # Source fixtures, plans and reports
+docs/                        # Development, deployment and display guides
+scripts/                     # Graphify wrapper
+```
+
 ## Hosting and future development
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) to push this repository to GitHub, connect Vercel and open the display on a tablet. See [DEVELOPMENT.md](DEVELOPMENT.md) for local checks and the project-scoped Graphify workflow.
+See [DEPLOYMENT.md](docs/DEPLOYMENT.md) to push this repository to GitHub, connect Vercel and open the display on a tablet. See [DEVELOPMENT.md](docs/DEVELOPMENT.md) for local checks and the project-scoped Graphify workflow.
 
 ## Vagdhenu audio playback
 
@@ -99,13 +112,13 @@ The 43 tests include the three recorded DrikGanita comparisons, 2026 daily sunri
 
 ## Home unit and licensing
 
-See `HOME_DISPLAY.md` for the recommended standalone arrangement and setup checklist. No hardware has been configured by this update.
+See `docs/HOME_DISPLAY.md` for the recommended standalone arrangement and setup checklist. No hardware has been configured by this update.
 
 Review Swiss Ephemeris/pyswisseph licensing before public hosting or redistribution. This remains a local prototype with unvalidated calendar edge cases.
 
 ## Accuracy investigation
 
-See `ACCURACY.md` for the named DrikGanita Kannada/Amanta Bellevue comparison profile, three recorded live reference dates, and proposed acceptance criteria. The data is in `validation/`. The identified sunrise, Adhika and Ritu mismatches are corrected under the default profile. The three recorded day-board comparisons pass within 60 seconds for all five recorded times per date. This limited comparison does not establish full-year accuracy. See the report for exact conventions and remaining validation work.
+See `docs/ACCURACY.md` for the named DrikGanita Kannada/Amanta Bellevue comparison profile, three recorded live reference dates, and proposed acceptance criteria. The data is in `validation/`. The identified sunrise, Adhika and Ritu mismatches are corrected under the default profile. The three recorded day-board comparisons pass within 60 seconds for all five recorded times per date. This limited comparison does not establish full-year accuracy. See the report for exact conventions and remaining validation work.
 
 ## Expanded DrikGanita validation
 
@@ -119,4 +132,4 @@ Weekday correction (October 29, 2026): Vara and both recital forms follow the se
 
 The recital highlights dynamic Samvatsara, Ayana, Ritu, month, Paksha, Tithi, Yoga and Karana in gold, Vaara in teal and Nakshatra in lavender in every script and saved variation. Highlighting preserves the underlying plain text used for audio and safely renders user wording as text. Printed colours use darker shades for a white page.
 
-On Vercel, calendar audio returns within one request using temporary storage, and the page keeps a bounded session cache. Local operation retains its disk-backed cache and background worker. See DEPLOYMENT.md for runtime limits and the required HF_TOKEN environment setting.
+On Vercel, calendar audio returns within one request using temporary storage, and the page keeps a bounded session cache. Local operation retains its disk-backed cache and background worker. See docs/DEPLOYMENT.md for runtime limits and the required HF_TOKEN environment setting.

@@ -3,13 +3,14 @@ import unittest
 from datetime import datetime
 from fastapi.testclient import TestClient
 from indic_transliteration import sanscript
-import app
-from family_wording import family_templates, TITHI_NOUNS
-from speech import SCHEMES, text_formats, canonical_text
+from sankalpa_display import api as app
+from sankalpa_display import calendar
+from sankalpa_display.family_wording import family_templates, TITHI_NOUNS
+from sankalpa_display.speech import SCHEMES, text_formats, canonical_text
 
 
 def render(moment,script='sanskrit',mode='morning'):
-    data=app.calculate(datetime.fromisoformat(moment))
+    data=calendar.calculate(datetime.fromisoformat(moment))
     values={**data['recital'][script],**data['family_recital'][script],
             'sandhya_action':text_formats()['actions'][script][mode]}
     return re.sub(r'\{(\w+)\}',lambda m:values[m[1]],family_templates()[script])
@@ -43,7 +44,7 @@ class FamilyWordingTests(unittest.TestCase):
         self.assertIn('शुभ योग शुभ करण',second)
 
     def test_leap_qualifiers_and_all_tithi_names_are_available(self):
-        self.assertEqual(set(TITHI_NOUNS),set(app.TITHI+['Amavasya']))
+        self.assertEqual(set(TITHI_NOUNS),set(calendar.TITHI+['Amavasya']))
         self.assertIn('अधिक ज्येष्ठ मासे',render('2026-05-25T12:00:00-07:00'))
         self.assertIn('निज ज्येष्ठ मासे',render('2026-06-20T12:00:00-07:00'))
 
@@ -69,18 +70,18 @@ class FamilyWordingTests(unittest.TestCase):
             self.assertEqual(client.post('/api/template-formats',json={'text':source,'script':'sanskrit'}).status_code,422)
 
     def test_calendar_audio_contains_only_requested_fields_in_all_scripts(self):
-        data=app.calculate(datetime.fromisoformat('2026-10-29T08:30:00-07:00'))
+        data=calendar.calculate(datetime.fromisoformat('2026-10-29T08:30:00-07:00'))
         expected='श्री पराभव नाम संवत्सरे, दक्षिणायने, शरदृतौ, आश्वयुज मासे, कृष्णपक्षे, कृष्ण चतुर्थी तिथौ, गुरु (बृहस्पति) वासरे, मृगशीर्षनक्षत्रे ।'
         for script in SCHEMES:
             self.assertEqual(canonical_text(data['calendar_audio'][script],script),expected)
         # Changed tithi must produce a different cache input even on the same day.
-        later=app.calculate(datetime.fromisoformat('2026-10-29T12:00:00-07:00'))
+        later=calendar.calculate(datetime.fromisoformat('2026-10-29T12:00:00-07:00'))
         self.assertNotEqual(data['calendar_audio'],later['calendar_audio'])
         self.assertIn('कृष्ण पञ्चमी तिथौ',later['calendar_audio']['sanskrit'])
         self.assertNotIn('ममोपात्त',expected)
 
     def test_kshaya_calendar_audio_is_withheld(self):
-        from family_wording import calendar_audio_text
+        from sankalpa_display.family_wording import calendar_audio_text
         self.assertEqual(calendar_audio_text({'review_required':True}),{})
 
 

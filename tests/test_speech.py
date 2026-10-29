@@ -6,8 +6,9 @@ import wave
 import base64
 
 from fastapi.testclient import TestClient
-import app
-from speech import AudioService, canonical_text, text_formats
+from sankalpa_display import api as app
+from sankalpa_display import calendar
+from sankalpa_display.speech import AudioService, canonical_text, text_formats
 
 
 def sample(script='sanskrit', mode='morning'):

@@ -14,10 +14,10 @@ Rules:
 
 ## Project setup and conventions
 
-- Use `./scripts/graphify` in this repo instead of assuming a global Graphify command exists. Follow DEVELOPMENT.md to install the pinned development tool after cloning.
+- Use `./scripts/graphify` in this repo instead of assuming a global Graphify command exists. Follow docs/DEVELOPMENT.md to install the pinned development tool after cloning.
 - The graph is local/generated and ignored by Git. Build it with `./scripts/graphify extract . --code-only --max-workers 2`; run `./scripts/graphify update .` after code changes. Use `cluster-only . --no-label` for reports without external model calls.
-- Runtime: FastAPI serves index.html and all API routes. Vercel uses Python 3.12 and the checked-in vercel.json. Graphify is excluded from the deployment.
+- Runtime: app.py re-exports the FastAPI app from sankalpa_display/api.py. Calendar logic lives in calendar.py; web assets live in sankalpa_display/web/. Vercel uses Python 3.12 and the checked-in vercel.json. Graphify is excluded from the deployment.
 - Keep the user's supplied family wording as the sole built-in reader choice. Preserve country-scoped named variations, all three scripts, highlighted dynamic fields and calendar-only audio.
-- Preserve DrikGanita conventions and review gates described in DEVELOPMENT.md and ACCURACY.md. Partial comparison is not full-year validation. Do not open holdout answers before the release gate passes.
+- Preserve DrikGanita conventions and review gates described in docs/DEVELOPMENT.md and docs/ACCURACY.md. Partial comparison is not full-year validation. Do not open holdout answers before the release gate passes.
 - Never commit tokens, .env files, generated audio or virtual environments. Use HF_TOKEN only on the server; do not put credentials in client code or documentation.
 - Run meaningful offline regression checks before committing. Live audio/reference requests need an actual task reason; avoid spending provider quota on routine tests.

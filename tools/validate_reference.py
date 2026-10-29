@@ -14,9 +14,9 @@ from pathlib import Path
 import re
 import unicodedata
 from zoneinfo import ZoneInfo
-import app
-from lunisolar import dt_jd, jd
-from collect_reference import PLAN, REFERENCE, engine_hashes, path_for, read_capture, validate_capture
+from sankalpa_display import calendar as app
+from sankalpa_display.lunisolar import dt_jd, jd
+from .collect_reference import PLAN, REFERENCE, engine_hashes, path_for, read_capture, validate_capture
 
 REPORTS=REFERENCE.parent/'reports'
 TOLERANCE_SECONDS=60

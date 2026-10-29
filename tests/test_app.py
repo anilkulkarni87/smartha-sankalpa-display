@@ -5,8 +5,8 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 from fastapi.testclient import TestClient
-from app import app
-from locations import CITIES
+from sankalpa_display.api import app
+from sankalpa_display.locations import CITIES
 
 
 class CalendarTests(unittest.TestCase):
@@ -74,10 +74,18 @@ class CalendarTests(unittest.TestCase):
             try:
                 os.chdir(temp)
                 response=self.client.get('/')
+                javascript=self.client.get('/static/app.js')
+                stylesheet=self.client.get('/static/styles.css')
             finally:
                 os.chdir(original)
         self.assertEqual(response.status_code,200)
         self.assertIn('Yajurveda',response.text)
+        self.assertIn('/static/app.js',response.text)
+        self.assertIn('/static/styles.css',response.text)
+        self.assertEqual(javascript.status_code,200)
+        self.assertIn('renderRecital',javascript.text)
+        self.assertEqual(stylesheet.status_code,200)
+        self.assertIn('.recital-calendar',stylesheet.text)
         self.assertEqual(response.headers['cache-control'],'no-store')
 
 

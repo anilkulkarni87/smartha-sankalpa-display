@@ -1,6 +1,6 @@
 # DrikGanita reference validation
 
-Generated UTC: 2026-10-29T15:46:02.035364+00:00
+Generated UTC: 2026-10-29T15:54:38.968173+00:00
 
 Reference: DrikGanita, Kannada / Amanta / Drik, geometric-centre sunrise, altitude zero, Smarta Ekadashi profile. City-centre coordinates and IANA timezones are fixed in the plan. This compares agreement with one named external source; it is not an independent certification of astronomical truth or ritual wording.
 

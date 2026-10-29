@@ -50,3 +50,17 @@ DrikGanita is the selected reference, using Kannada/Amanta, geometric-centre sun
 Read `ACCURACY.md` and `validation/reports/SUMMARY.md` before making accuracy claims. External coverage is incomplete. Reserved answers remain unreleased; teacher wording/pronunciation and Kshaya recital review remain pending.
 
 Secrets, local audio, virtual environments, scratch files, deployment links and generated graph caches are excluded from commits. `.env.example` contains placeholders only. The app does not automatically load `.env` files; export environment variables for local use or configure them in Vercel.
+
+## Repository layout
+
+- `app.py`: stable `uvicorn app:app` and Vercel entry point.
+- `sankalpa_display/api.py`: HTTP routes and frontend asset serving.
+- `sankalpa_display/calendar.py`: daily Panchanga calculations; `lunisolar.py`: month/year astronomy.
+- `sankalpa_display/wording.py`, `family_wording.py`, `speech.py`: recital forms, family wording and audio.
+- `sankalpa_display/web/`: HTML, JavaScript and CSS served at `/` and `/static/`.
+- `tests/`: discovered automatically by `python -m unittest discover -v`.
+- `tools/`: reference commands, invoked as `python -m tools.collect_reference`, `python -m tools.validate_reference`, `python -m tools.report_reference` and `python -m tools.boundary_evidence`.
+- `validation/`: unchanged source captures, plans and comparison evidence.
+- `docs/`: deployment, development, display and accuracy notes.
+
+Run commands from the repository root. The source paths used for validation hashes now include the package modules; original capture plans and historical hashes are preserved.

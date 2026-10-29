@@ -1,6 +1,6 @@
 """Recital forms of Panchanga names, separate from the calendar's reference labels."""
 from indic_transliteration import sanscript
-from speech import SCHEMES
+from .speech import SCHEMES
 
 
 def table(keys, values):

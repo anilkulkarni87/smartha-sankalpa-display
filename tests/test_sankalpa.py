@@ -3,21 +3,22 @@ import unittest
 from datetime import datetime
 from indic_transliteration import sanscript
 
-import app
-import sankalpa
-from speech import SCHEMES, text_formats, canonical_text
+from sankalpa_display import api as app
+from sankalpa_display import calendar
+from sankalpa_display import wording as sankalpa
+from sankalpa_display.speech import SCHEMES, text_formats, canonical_text
 
 
 class ExpandedSankalpaTests(unittest.TestCase):
     def test_all_calendar_names_have_recital_forms(self):
-        for names,mapping in [(app.SAMVATSARA,sankalpa.YEAR),(app.MASA,sankalpa.MONTH),
-                              (app.TITHI+['Amavasya'],sankalpa.TITHI),(app.NAK,sankalpa.NAKSHATRA),
-                              (app.YOGA,sankalpa.YOGA),(app.KARANA+['Kimstughna','Shakuni','Chatushpada','Naga'],sankalpa.KARANA),
-                              (app.VARA,sankalpa.VARA)]:
+        for names,mapping in [(calendar.SAMVATSARA,sankalpa.YEAR),(calendar.MASA,sankalpa.MONTH),
+                              (calendar.TITHI+['Amavasya'],sankalpa.TITHI),(calendar.NAK,sankalpa.NAKSHATRA),
+                              (calendar.YOGA,sankalpa.YOGA),(calendar.KARANA+['Kimstughna','Shakuni','Chatushpada','Naga'],sankalpa.KARANA),
+                              (calendar.VARA,sankalpa.VARA)]:
             self.assertFalse(set(names)-mapping.keys())
 
     def test_full_form_fills_all_fields_and_agrees_in_three_scripts(self):
-        data=app.calculate(datetime.fromisoformat('2026-10-28T23:20:00-07:00'))
+        data=calendar.calculate(datetime.fromisoformat('2026-10-28T23:20:00-07:00'))
         formats=text_formats();outputs={}
         for script,scheme in SCHEMES.items():
             values={**data['recital'][script],'sandhya_action':formats['actions'][script]['morning']}
@@ -33,8 +34,8 @@ class ExpandedSankalpaTests(unittest.TestCase):
             canonical_text(outputs['sanskrit'],'sanskrit')
 
     def test_recital_fields_change_with_tithi_and_weekday(self):
-        a=app.calculate(datetime.fromisoformat('2026-10-28T23:20:00-07:00'))
-        b=app.calculate(datetime.fromisoformat('2026-10-29T12:00:00-07:00'))
+        a=calendar.calculate(datetime.fromisoformat('2026-10-28T23:20:00-07:00'))
+        b=calendar.calculate(datetime.fromisoformat('2026-10-29T12:00:00-07:00'))
         self.assertNotEqual(a['recital']['sanskrit']['recital_tithi'],b['recital']['sanskrit']['recital_tithi'])
         self.assertNotEqual(a['recital']['sanskrit']['recital_vara'],b['recital']['sanskrit']['recital_vara'])
 

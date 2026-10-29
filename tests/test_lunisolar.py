@@ -10,18 +10,21 @@ import unittest
 from zoneinfo import ZoneInfo
 from fastapi.testclient import TestClient
 from indic_transliteration import sanscript
-import app
-from locations import CITIES
-from lunisolar import (jd, dt_jd, conjunction, lunation_at, month_info,
+from sankalpa_display import api as app
+from sankalpa_display import calendar
+from sankalpa_display.locations import CITIES
+from sankalpa_display.lunisolar import (jd, dt_jd, conjunction, lunation_at, month_info,
                        sunrise_for, year_boundary)
-from speech import SCHEMES
+from sankalpa_display.speech import SCHEMES
 
 
 class LunisolarTests(unittest.TestCase):
     def test_recorded_drikganita_comparisons(self):
-        for path in sorted(Path(__file__).with_name('validation').glob('drikganita-*-bellevue.json')):
+        fixtures=sorted((Path(__file__).resolve().parents[1]/'validation').glob('drikganita-*-bellevue.json'))
+        self.assertEqual(len(fixtures),3)
+        for path in fixtures:
             fixture=json.loads(path.read_text());reference=fixture['reference']
-            actual=app.calculate(datetime.fromisoformat(fixture['app_sample']))
+            actual=calendar.calculate(datetime.fromisoformat(fixture['app_sample']))
             with self.subTest(date=fixture['date']):
                 for key in ('samvatsara','masa','ritu','ayana','paksha','tithi','nakshatra','yoga','karana'):
                     self.assertEqual(actual[key],reference[key],key)
@@ -34,7 +37,7 @@ class LunisolarTests(unittest.TestCase):
     def test_adhika_nija_recital_in_all_scripts(self):
         for date,kind,prefix in [('2026-05-25T12:00:00-07:00','adhika','अधिक'),
                                  ('2026-06-20T12:00:00-07:00','nija','निज')]:
-            data=app.calculate(datetime.fromisoformat(date))
+            data=calendar.calculate(datetime.fromisoformat(date))
             self.assertEqual(data['masa'],'Jyeshtha');self.assertEqual(data['month_type'],kind)
             for script,scheme in SCHEMES.items():
                 deva=sanscript.transliterate(data['recital'][script]['recital_masa'],scheme,sanscript.DEVANAGARI)
@@ -44,20 +47,20 @@ class LunisolarTests(unittest.TestCase):
         index=lunation_at(jd(datetime.fromisoformat('2026-05-25T12:00:00-07:00')))
         for index in (index,index+1,index+2):
             event=conjunction(index)
-            before=app.calculate(dt_jd(event)-timedelta(seconds=1))
-            after=app.calculate(dt_jd(event)+timedelta(seconds=1))
+            before=calendar.calculate(dt_jd(event)-timedelta(seconds=1))
+            after=calendar.calculate(dt_jd(event)+timedelta(seconds=1))
             self.assertEqual(before['tithi'],'Amavasya');self.assertEqual(after['tithi'],'Pratipada')
             self.assertNotEqual(before['month_type'],after['month_type'])
             self.assertEqual(datetime.fromisoformat(before['lunar_month_end']),datetime.fromisoformat(after['lunar_month_start']))
 
     def test_adhika_chaitra_does_not_start_new_year(self):
         place=CITIES['bengaluru']
-        a=app.calculate(datetime.fromisoformat('2029-03-20T12:00:00+05:30'),place)
+        a=calendar.calculate(datetime.fromisoformat('2029-03-20T12:00:00+05:30'),place)
         self.assertEqual((a['masa_display'],a['samvatsara']),('Adhika Chaitra','Kilaka'))
         boundary=year_boundary(2029,place)
         self.assertEqual(dt_jd(boundary).astimezone(ZoneInfo(place['timezone'])).date().isoformat(),'2029-04-14')
-        before=app.calculate(dt_jd(boundary)-timedelta(seconds=1),place)
-        after=app.calculate(dt_jd(boundary)+timedelta(seconds=1),place)
+        before=calendar.calculate(dt_jd(boundary)-timedelta(seconds=1),place)
+        after=calendar.calculate(dt_jd(boundary)+timedelta(seconds=1),place)
         self.assertEqual(before['samvatsara'],'Kilaka');self.assertEqual(after['samvatsara'],'Saumya')
         self.assertEqual(after['masa_display'],'Nija Chaitra')
 
@@ -67,8 +70,8 @@ class LunisolarTests(unittest.TestCase):
         sunrise_boundary=year_boundary(2026,place,year_convention='sunrise')
         self.assertNotEqual(conjunction_boundary,sunrise_boundary)
         middle=dt_jd((conjunction_boundary+sunrise_boundary)/2)
-        self.assertNotEqual(app.calculate(middle,place,year_mode='conjunction')['samvatsara'],
-                            app.calculate(middle,place,year_mode='sunrise')['samvatsara'])
+        self.assertNotEqual(calendar.calculate(middle,place,year_mode='conjunction')['samvatsara'],
+                            calendar.calculate(middle,place,year_mode='sunrise')['samvatsara'])
 
     def test_skipped_pratipada_does_not_advance_year_before_new_moon(self):
         # DrikGanita: Apr 10 2032 at Bengaluru sunrise is Amavasya / Virodhikrit;
@@ -76,29 +79,29 @@ class LunisolarTests(unittest.TestCase):
         place=CITIES['bengaluru']
         sample=datetime.fromisoformat('2032-04-10T06:20:00+05:30')
         for mode in ('conjunction','sunrise'):
-            result=app.calculate(sample,place,year_mode=mode)
+            result=calendar.calculate(sample,place,year_mode=mode)
             self.assertEqual((result['tithi'],result['samvatsara']),('Amavasya','Virodhikrit'))
         boundary=year_boundary(2032,place,year_convention='conjunction')
-        before=app.calculate(dt_jd(boundary)-timedelta(seconds=1),place)
-        after=app.calculate(dt_jd(boundary)+timedelta(seconds=1),place)
+        before=calendar.calculate(dt_jd(boundary)-timedelta(seconds=1),place)
+        after=calendar.calculate(dt_jd(boundary)+timedelta(seconds=1),place)
         self.assertEqual(before['samvatsara'],'Virodhikrit');self.assertEqual(after['samvatsara'],'Paridhavi')
         sunrise_boundary=dt_jd(year_boundary(2032,place,year_convention='sunrise')).astimezone(ZoneInfo(place['timezone']))
         self.assertEqual(sunrise_boundary.date().isoformat(),'2032-04-11')
-        self.assertEqual(app.calculate(sunrise_boundary,place,year_mode='sunrise')['tithi'],'Dvitiya')
+        self.assertEqual(calendar.calculate(sunrise_boundary,place,year_mode='sunrise')['tithi'],'Dvitiya')
 
     def test_kshaya_magha_1983_requires_recital_review(self):
-        data=app.calculate(datetime.fromisoformat('1983-02-01T12:00:00+05:30'),CITIES['bengaluru'])
+        data=calendar.calculate(datetime.fromisoformat('1983-02-01T12:00:00+05:30'),CITIES['bengaluru'])
         self.assertEqual(data['month_type'],'kshaya');self.assertEqual(data['omitted_month'],'Magha')
         self.assertEqual(data['solar_ingresses_in_month'],2)
         self.assertTrue(data['review_required']);self.assertTrue(data['warnings'])
         self.assertIn('[',data['recital']['sanskrit']['recital_masa'])
 
     def test_reported_transition_times_change_the_active_field(self):
-        sample=app.calculate(datetime.fromisoformat('2026-10-28T08:00:00-07:00'))
+        sample=calendar.calculate(datetime.fromisoformat('2026-10-28T08:00:00-07:00'))
         for field in ('tithi','nakshatra','yoga','karana'):
             boundary=datetime.fromisoformat(sample[field+'_ends'])
-            before=app.calculate(boundary-timedelta(seconds=2))
-            after=app.calculate(boundary+timedelta(seconds=2))
+            before=calendar.calculate(boundary-timedelta(seconds=2))
+            after=calendar.calculate(boundary+timedelta(seconds=2))
             self.assertEqual(before[field],sample[field])
             self.assertNotEqual(before[field],after[field])
 

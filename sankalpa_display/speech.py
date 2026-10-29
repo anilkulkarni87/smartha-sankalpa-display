@@ -94,7 +94,7 @@ def render_vagdhenu(text, destination, source):
 
 class AudioService:
     def __init__(self, cache_dir=None, renderer=render_vagdhenu):
-        self.cache = Path(cache_dir or Path(__file__).with_name('.audio-cache'))
+        self.cache = Path(cache_dir or Path(__file__).resolve().parents[1]/'.audio-cache')
         self.source = os.environ.get('VAGDHENU_SPACE', 'prathoshap/vagdhenu-demo')
         self.renderer = renderer
         self.jobs = {}

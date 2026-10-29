@@ -19,3 +19,6 @@ scripts/
 *.md
 requirements-dev.txt
 requirements-tools.txt
+tests/
+tools/
+docs/
