@@ -3,7 +3,6 @@ import unittest
 from datetime import datetime
 from indic_transliteration import sanscript
 
-from sankalpa_display import api as app
 from sankalpa_display import calendar
 from sankalpa_display import wording as sankalpa
 from sankalpa_display.speech import SCHEMES, text_formats, canonical_text

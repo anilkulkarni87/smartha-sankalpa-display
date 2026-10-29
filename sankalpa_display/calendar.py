@@ -107,4 +107,3 @@ def calculate(moment,location=None,sunrise_mode='hindu',ritu_mode='solar',year_m
     f['calendar_audio']=calendar_audio_text(f)
     for k in ('sun','moon','tithi_index','nak_index','yoga_index','karana_index'):f.pop(k,None)
     return f
-

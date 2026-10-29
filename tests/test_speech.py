@@ -7,7 +7,6 @@ import base64
 
 from fastapi.testclient import TestClient
 from sankalpa_display import api as app
-from sankalpa_display import calendar
 from sankalpa_display.speech import AudioService, canonical_text, text_formats
 
 

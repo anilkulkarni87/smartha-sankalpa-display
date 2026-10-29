@@ -823,11 +823,11 @@
   "split": "development",
   "evaluation_kind": "development",
   "comparator_sha256": "36c3c528239403f4991aa4df603186d6d29c8e9c5f1e12363a3edb0f3cfa487c",
-  "generated_utc": "2026-10-29T15:54:12.777637+00:00",
+  "generated_utc": "2026-10-29T15:57:53.778225+00:00",
   "engine_hashes": {
     "app.py": "fd83090be4e399c5053ff2ffe31b5dd48023fa78a59d6fc3f9ee69e92a84d4cd",
     "sankalpa_display/api.py": "ea70396a21db5447b20d7e5d85e3eed7a00c56a852aa6505c9e30569cddc2ce6",
-    "sankalpa_display/calendar.py": "c4c59f96dea222914a321ab22ceacf3f8b5419ee9338477090b02406d748386c",
+    "sankalpa_display/calendar.py": "1f9f47863cc48cb55cfc581180c9daf2f8a6bf4a6a848317f3aab6157307d6ad",
     "sankalpa_display/lunisolar.py": "87faa5b657829d6b6042c318dcf09d342477a754efcf72b1e37119e570a7bb50",
     "sankalpa_display/locations.py": "570930dd3f5fd24d70cd5dc37114cd84a78efee66780d57f38fd2bc98ef32682",
     "sankalpa_display/wording.py": "210356d929b3546e9e8d199d25df60af362c1cf383a2be46467a0326202f02ef",
