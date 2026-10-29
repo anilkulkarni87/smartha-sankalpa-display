@@ -1,0 +1,9 @@
+.venv/
+.venv-graphify/
+work/
+.audio-cache/
+.git/
+.codex/
+validation/reference/
+validation/reports/
+graphify-out/

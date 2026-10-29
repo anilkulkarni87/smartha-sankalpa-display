@@ -1,0 +1,5 @@
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+pyswisseph>=2.10,<3
+indic-transliteration>=2.3,<3
+gradio_client>=2.7,<3

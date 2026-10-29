@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-20",
+  "app_sample": "2026-06-20T06:00:00-07:00",
+  "reference": {
+    "samvatsara": "Parabhava", "masa": "Jyeshtha", "adhika": false,
+    "ritu": "Grishma", "ayana": "Uttarayana", "paksha": "Shukla",
+    "tithi": "Saptami", "nakshatra": "Purva Phalguni", "yoga": "Siddhi", "karana": "Garaja",
+    "sunrise_hhmm": "05:17", "tithi_ends_hhmm": "02:51", "nakshatra_ends_hhmm": "21:01",
+    "yoga_ends_hhmm": "22:51", "karana_ends_hhmm": "14:58"
+  },
+  "reference_day_offsets": {"tithi_ends": 1},
+  "source_url": "https://drikganita.com/?region=kannada&lat=47.6101&lon=-122.2015&tz=America%2FLos_Angeles&place=Bellevue%2C+Washington%2C+USA&date=2026-06-20",
+  "observed_on_local_date": "2026-10-28",
+  "reference_basis": "Live loaded Kannada day board for Saturday June 20; sunrise board labels before listed transitions.",
+  "normalization": "Transliteration normalized. Gara = Garaja. Jyeshtha had no displayed Adhika or Nija qualifier: absence of Adhika checked, Nija is the app classification.",
+  "coordinates": {"latitude": 47.6101, "longitude": -122.2015, "timezone": "America/Los_Angeles", "region": "kannada"},
+  "precision": "Displayed minute only; rounding policy unknown. Tithi end explicitly shown Tomorrow."
+}

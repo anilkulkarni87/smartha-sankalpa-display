@@ -1,0 +1,98 @@
+{
+  "reference": "https://drikganita.com/api/v1/panchang",
+  "basis": "Source sunrise labels from the predeclared development cases; full original responses retained in reference/bengaluru/*.json.gz.",
+  "cases": [
+    {
+      "date": "2032-04-10",
+      "request": {
+        "region": "kannada",
+        "sunrise_type": "centre",
+        "altitude": 0,
+        "calc_method": "drik",
+        "kalam_basis": "sunrise",
+        "ekadashi_school": "smarta",
+        "date": "2032-04-10",
+        "time": "12:00",
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "timezone": "Asia/Kolkata"
+      },
+      "response_sha256": "223b59c0ac2d0e22e5d0d455065283ace6eb41958e0f24c0aca9f2868e886d70",
+      "source_sunrise_jd": 2463332.5301579675,
+      "source_tithi": "Amāvāsyā",
+      "source_tithi_number": 30,
+      "source_samvatsara": "Virodhikṛt",
+      "source_month": "Phālguna",
+      "source_month_start_jd": 2463303.1838171305
+    },
+    {
+      "date": "2032-04-11",
+      "request": {
+        "region": "kannada",
+        "sunrise_type": "centre",
+        "altitude": 0,
+        "calc_method": "drik",
+        "kalam_basis": "sunrise",
+        "ekadashi_school": "smarta",
+        "date": "2032-04-11",
+        "time": "12:00",
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "timezone": "Asia/Kolkata"
+      },
+      "response_sha256": "761b79f90ce7bf5bd74d3556d8a12e99902bf1059d79fe04bd3c4d7d1f971183",
+      "source_sunrise_jd": 2463333.5297354674,
+      "source_tithi": "Dvitīyā",
+      "source_tithi_number": 2,
+      "source_samvatsara": "Paridhāvī",
+      "source_month": "Caitra",
+      "source_month_start_jd": 2463332.610784245
+    },
+    {
+      "date": "2037-03-17",
+      "request": {
+        "region": "kannada",
+        "sunrise_type": "centre",
+        "altitude": 0,
+        "calc_method": "drik",
+        "kalam_basis": "sunrise",
+        "ekadashi_school": "smarta",
+        "date": "2037-03-17",
+        "time": "12:00",
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "timezone": "Asia/Kolkata"
+      },
+      "response_sha256": "9074ac0f3965d5f03f9bb1423c0f266a91a18458d04a91c20b58cd43a1d5077b",
+      "source_sunrise_jd": 2465134.5410813973,
+      "source_tithi": "Pratipadā",
+      "source_tithi_number": 1,
+      "source_samvatsara": "Piṅgala",
+      "source_month": "Caitra",
+      "source_month_start_jd": 2465134.483518785
+    },
+    {
+      "date": "2037-03-18",
+      "request": {
+        "region": "kannada",
+        "sunrise_type": "centre",
+        "altitude": 0,
+        "calc_method": "drik",
+        "kalam_basis": "sunrise",
+        "ekadashi_school": "smarta",
+        "date": "2037-03-18",
+        "time": "12:00",
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "timezone": "Asia/Kolkata"
+      },
+      "response_sha256": "d6de1968351c95ea4a67f421e647e9c964394e11658275b9768a03ca93dd10ff",
+      "source_sunrise_jd": 2465135.5406289664,
+      "source_tithi": "Pratipadā",
+      "source_tithi_number": 1,
+      "source_samvatsara": "Piṅgala",
+      "source_month": "Caitra",
+      "source_month_start_jd": 2465134.483518785
+    }
+  ]
+}

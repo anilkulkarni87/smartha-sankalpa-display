@@ -1,0 +1,31 @@
+{
+  "status": "corrected in development before reserved answers were opened",
+  "city": "bengaluru",
+  "date": "2032-04-10",
+  "sample": "source sunrise",
+  "app_before": {
+    "samvatsara": "Paridhavi",
+    "year_mode": "sunrise",
+    "rule": "Skipped-Pratipada festival-date fallback selected a sunrise before regular-Chaitra conjunction"
+  },
+  "source": {
+    "samvatsara": "Virodhikṛt",
+    "tithi": "Amāvāsyā",
+    "month": "Phālguna",
+    "endpoint": "https://drikganita.com/api/v1/panchang",
+    "response_sha256": "223b59c0ac2d0e22e5d0d455065283ace6eb41958e0f24c0aca9f2868e886d70"
+  },
+  "app_after": {
+    "samvatsara": "Virodhikrit",
+    "year_mode": "conjunction",
+    "year_boundary": "2032-04-10T08:09:32.136091+05:30"
+  },
+  "correction": "Use regular-Chaitra conjunction by default; optional sunrise-year boundary is always at or after conjunction. Civil Ugadi observance rules do not advance Samvatsara before its astronomical boundary.",
+  "calculation_hashes_after": {
+    "app.py": "281fdd1dbd543fac932607bc9610231150c353d33494b1c61acb297737abd23f",
+    "lunisolar.py": "87faa5b657829d6b6042c318dcf09d342477a754efcf72b1e37119e570a7bb50",
+    "locations.py": "570930dd3f5fd24d70cd5dc37114cd84a78efee66780d57f38fd2bc98ef32682",
+    "sankalpa.py": "7e25908314ef53f349f6bc2d45b79c261b994d704fc2b8e675d063d8a5e2122f"
+  },
+  "regression": "test_lunisolar.LunisolarTests.test_skipped_pratipada_does_not_advance_year_before_new_moon"
+}

@@ -1,0 +1,2 @@
+# Development only; keep separate from deployed runtime dependencies.
+graphifyy==0.9.97

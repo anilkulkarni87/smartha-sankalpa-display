@@ -1,0 +1,21 @@
+{
+  "processed": 1,
+  "requested": 1,
+  "failures": [
+    {
+      "case": {
+        "city": "bengaluru",
+        "date": "2026-07-26",
+        "split": "development",
+        "purpose": "2026 daily coverage"
+      },
+      "error": "TimeoutError: The read operation timed out"
+    }
+  ],
+  "captured_files": 790,
+  "updated_utc": "2026-10-29T14:39:19.844763+00:00",
+  "status": "incomplete_upstream_timeout",
+  "expected_files": 1127,
+  "missing_files": 337,
+  "note": "Collection stopped after repeated upstream timeouts. A single 45-second recovery probe failed. Resume cached collection after service recovery; final holdout remains unreleased."
+}

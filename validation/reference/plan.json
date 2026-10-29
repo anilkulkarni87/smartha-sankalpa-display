@@ -1,0 +1,6810 @@
+{
+  "created_utc": "2026-10-29T07:12:32.251916+00:00",
+  "source": "https://drikganita.com/api/v1/panchang",
+  "profile": {
+    "region": "kannada",
+    "sunrise_type": "centre",
+    "altitude": 0,
+    "calc_method": "drik",
+    "kalam_basis": "sunrise",
+    "ekadashi_school": "smarta"
+  },
+  "cities": {
+    "bellevue": {
+      "id": "bellevue",
+      "city": "Bellevue, WA",
+      "country": "United States",
+      "latitude": 47.6101,
+      "longitude": -122.2015,
+      "timezone": "America/Los_Angeles"
+    },
+    "bengaluru": {
+      "id": "bengaluru",
+      "city": "Bengaluru",
+      "country": "India",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "timezone": "Asia/Kolkata"
+    },
+    "sydney": {
+      "id": "sydney",
+      "city": "Sydney",
+      "country": "Australia",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "timezone": "Australia/Sydney"
+    }
+  },
+  "engine_before_capture": {
+    "app.py": "d532c481e6d1cfced56df18fb4ad6979e0437dc0ec147ef4249e899330f07b38",
+    "lunisolar.py": "bf3db34256ae5f031843c075df05f060b5c8ca66c49a2cedb0138b524e46b3ba",
+    "locations.py": "570930dd3f5fd24d70cd5dc37114cd84a78efee66780d57f38fd2bc98ef32682",
+    "sankalpa.py": "7e25908314ef53f349f6bc2d45b79c261b994d704fc2b8e675d063d8a5e2122f"
+  },
+  "split_rule": "sha256(drik-2026-v1:city:date) first 8 hex digits modulo 5 == 0; already inspected Bellevue May and two known dates excluded",
+  "holdout_policy": "Do not evaluate reserved external answers until development changes are frozen. Final results cannot be used as a new unseen test after tuning.",
+  "cases": [
+    {
+      "city": "bellevue",
+      "date": "2026-01-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-25",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-01-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-05",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-10",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-02-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-03-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-11",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-28",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-04-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-05-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-01",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-06-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-01",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-02",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-15",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-07-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-07",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-10",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-11",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-22",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-29",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-08-31",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-07",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-11",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-09-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-12",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-10-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-02",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-03",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-07",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-11-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-01",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-02",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-12",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-21",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bellevue",
+      "date": "2026-12-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-01",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-02",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-03",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-12",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-15",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-21",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-01-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-01",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-05",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-11",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-27",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-02-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-05",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-15",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-21",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-22",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-25",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-03-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-01",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-20",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-28",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-29",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-04-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-05",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-10",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-15",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-05-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-28",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-06-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-29",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-07-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-10",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-21",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-22",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-08-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-05",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-27",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-09-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-07",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-12",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-27",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-29",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-10-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-11-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-03",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-08",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-20",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-22",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-25",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2026-12-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-25",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-27",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-01-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-11",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-02-28",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-02",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-10",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-20",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-27",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-03-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-28",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-04-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-04",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-28",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-05-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-12",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-20",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-21",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-06-30",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-02",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-05",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-14",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-22",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-24",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-07-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-07",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-15",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-22",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-08-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-12",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-13",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-20",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-09-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-03",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-11",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-17",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-19",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-23",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-10-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-03",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-06",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-08",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-09",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-10",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-16",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-18",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-25",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-26",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-29",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-11-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-01",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-02",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-03",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-04",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-05",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-06",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-07",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-08",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-09",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-10",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-11",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-12",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-13",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-14",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-15",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-16",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-17",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-18",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-19",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-20",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-21",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-22",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-23",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-24",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-25",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-26",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-27",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-28",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-29",
+      "split": "holdout",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-30",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "sydney",
+      "date": "2026-12-31",
+      "split": "development",
+      "purpose": "2026 daily coverage"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2037-03-16",
+      "split": "development",
+      "purpose": "repeated-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2037-03-17",
+      "split": "development",
+      "purpose": "repeated-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2037-03-18",
+      "split": "development",
+      "purpose": "repeated-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2037-03-19",
+      "split": "development",
+      "purpose": "repeated-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2032-04-09",
+      "split": "development",
+      "purpose": "skipped-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2032-04-10",
+      "split": "development",
+      "purpose": "skipped-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2032-04-11",
+      "split": "development",
+      "purpose": "skipped-Pratipada candidate"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2032-04-12",
+      "split": "development",
+      "purpose": "skipped-Pratipada candidate"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-03-15",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-03-16",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-03-17",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-03-18",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-03-15",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-03-16",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-03-17",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-03-18",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-03-15",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-03-16",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-03-17",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-03-18",
+      "split": "development",
+      "purpose": "Adhika Chaitra"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-04-13",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-04-14",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-04-15",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bellevue",
+      "date": "2029-04-16",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-04-13",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-04-14",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-04-15",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "bengaluru",
+      "date": "2029-04-16",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-04-13",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-04-14",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-04-15",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    },
+    {
+      "city": "sydney",
+      "date": "2029-04-16",
+      "split": "development",
+      "purpose": "regular Chaitra after Adhika"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "reference_site": "https://drikganita.com/",
+  "data_endpoint": "https://drikganita.com/api/v1/panchang",
+  "discovery": "Read-only calculation request used by the public calendar client; found in first-party JavaScript, not a documented API stability guarantee.",
+  "public_client_script": "https://drikganita.com/_next/static/chunks/09npc96yyil02.js",
+  "observed_utc_date": "2026-10-29",
+  "engine_claim": "Public site footer names Skyfield / JPL DE440s / Lahiri. This is a source claim, not independently audited engine provenance.",
+  "response_time_basis": "Top-level calendar fields are at source sunrise; at_time and day_sequence expose specified-time/interval facts. Source Julian days permit finer timestamp comparisons than rendered minute labels.",
+  "source_policy": "Public unauthenticated read-only calculations; no account mutation, credentials, paid quota bypass or authentication workaround. Stop on HTTP 401/403/429. One new request per second; cached responses reused."
+}
